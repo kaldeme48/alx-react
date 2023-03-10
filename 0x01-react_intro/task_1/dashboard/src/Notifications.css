@@ -1,4 +1,5 @@
 .Notifications {
-  border: thin dotted #e0344a;
-  padding: 16px;
+  padding: 1rem;
+  border-style: dotted;
+  border-color: red;
 }

@@ -1,23 +1,25 @@
-import logo from './logo.jpg';
-import './App.css';
-import { getFullYear, getFooterCopy } from './utils';
+import logo from "./logo.jpg";
+import "./App.css";
+import { getFooterCopy, getFullYear } from "./utils";
 
 function App() {
   return (
-    <>
-      <header className='App-header'>
-        <img src={logo} alt='logo' />
-        <h1>School dashboard</h1>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1> School dashboard</h1>
       </header>
-      <main role='main' className='App-body'>
-        <p>Login to access the full dashboard</p>
-      </main>
-      <footer className='App-footer'>
-        <p>
-          Copyright {getFullYear()} - {getFooterCopy(true)}
-        </p>
+      <body>
+        <div className="App-body">
+          <p>Login to access the full dashboard</p>
+        </div>
+      </body>
+      <footer>
+        <div className="App-footer">
+          <p>Copyright {getFullYear()}, {getFooterCopy(true)}</p>
+        </div>
       </footer>
-    </>
+    </div>
   );
 }
 
